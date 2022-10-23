@@ -1,10 +1,10 @@
-totafsdfsf test fdsfsdf
-totafsdtest2 fdsfsdf fdfjs
-jfldjfldk # wynik
-fjdfsfds # k alal
-djfjkldsjf test5 jjjjjj fsfjdljfdlsj flj ldfj
-gjjkdsljflds test6 jdlkfjdslf
-fjdslkfjdl test7 tttttt
-fjdlsjfkl test8 oooolll
-rwrewrew test9 fjdslkjfdl
-fjdlskjfldjflj test10 rewrewrew
+pierwsze test FD
+drugie test2  FDFJS
+trzecie test3 WYN
+czwarte test4      ALAL
+piate test5 JJJJJJ FSFJDLJFDLSJ FLJ LDFJ
+szoste test6  AD
+siodme test7 TTTTTT
+osme test8 OOOOLLL
+diewiate test9 ASDER
+dziesiate test10 REW
