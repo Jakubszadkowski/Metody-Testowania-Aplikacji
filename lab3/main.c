@@ -20,7 +20,7 @@ int my_printf(char *format_string, char *param){
 			break;
 
 	}else if((format_string[i] == '#') && (format_string[i+1] == '.') && isdigit(format_string[i+2]) && (format_string[i+3] == 'k')){
-		char temp[2] = {format_string[i+2],'\0'};
+		char temp[1] = {format_string[i+2]};
 		int ilosc = atoi(temp)+1;
 		printf("%s",param);
 
@@ -33,6 +33,39 @@ int my_printf(char *format_string, char *param){
 			}
 			ilosc--;
 		putchar(format_string[j]);
+		}
+		break;
+
+	}else if((format_string[i] == '#')  && isdigit(format_string[i+1]) && (format_string[i+2] == 'k')){
+		char temp[1] = {format_string[i+1]};
+		int ilosc = atoi(temp);
+		printf("%s",param);
+		if(ilosc<strlen(format_string)-i-4){
+		for (int j = i+3; j < strlen(format_string)  ; j++) {
+			if ((format_string[j] >= 'a') && (format_string[j] <= 'z')){
+				format_string[j] -= 32;
+			}
+			else if ((format_string[j] >= 'A') && (format_string[j] <= 'Z')){
+				format_string[j] += 32;
+			}
+		
+		putchar(format_string[j]);
+		}}
+		else{
+			for(int j=strlen(format_string)-i-4; j<ilosc; j++){
+				putchar(' ');
+			}
+			for (int j = i+3; j < strlen(format_string)  ; j++) {
+				if ((format_string[j] >= 'a') && (format_string[j] <= 'z')){
+					format_string[j] -= 32;
+				}
+				else if ((format_string[j] >= 'A') && (format_string[j] <= 'Z')){
+					format_string[j] += 32;
+				}
+		
+			putchar(format_string[j]);
+			}			
+
 		}
 		break;
 
