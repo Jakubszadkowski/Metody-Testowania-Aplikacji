@@ -15,7 +15,6 @@ int my_printf(char *format_string, char *param){
 					size++;
 				}
 				else{
-					putchar('%');
 					break;
 				}
 			
@@ -23,7 +22,6 @@ int my_printf(char *format_string, char *param){
 			for(int j = size-1 ; j >= 0 ; j--){
 				putchar(temp[j]);
 			}
-
 			break;
 
 	}else
