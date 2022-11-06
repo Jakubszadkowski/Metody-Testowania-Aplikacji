@@ -8,7 +8,7 @@ fjdfsfds #g 65410
 test4
 djfjkldsjf #g 123456789111213
 test5
-gjjkdsljflds #g 0
+gjjkdsljflds #g 10
 test6
 fjdslkfjdl #5g tttttt
 test7
@@ -16,5 +16,5 @@ fjdlsjfkl #g 5640000
 test8
 rwrewrew #g 753432
 test9
-fjdlskjfldjflj #k rewrewrew
+fjdlskjfldjflj #g 12344321
 test10
