@@ -3,16 +3,6 @@
 #include <ctype.h>
 #include <stdlib.h>
 
-int ileZer(char* temp,int size){
-	int zera=-1;
-	for (int i = 0 ; i < size ; i++)
-		{
-			if(temp[i]=='0')
-				zera++;
-		}
-	return zera;
-}
-
 int my_printf(char *format_string, char *param){
 	for(int i=0;i<strlen(format_string);i++){
 		if((format_string[i] == '#') && ((format_string[i+2] == 'g')||(format_string[i+3] == 'g'))) {
@@ -30,6 +20,7 @@ int my_printf(char *format_string, char *param){
 						putchar('0');
 					}
 				}
+				flag=2;
 			putchar(format_string[j]);
 			}
 			break;
