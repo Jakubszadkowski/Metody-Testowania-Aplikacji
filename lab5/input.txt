@@ -6,15 +6,15 @@ jfldjfldk #3g wynik
 test3
 fjdfsfds #3g 65410
 test4
-djfjkldsjf #32g 123456789111213
+djfjkldsjf #10g 123
 test5
 gjjkdsljflds #3g 10
 test6
-fjdslkfjdl #5g tttttt
+fjdslkfjdl #5g 12345
 test7
 fjdlsjfkl #3g 5640000
 test8
 rwrewrew #2g 753432
 test9
-fjdlskjfldjflj #1g 005
+fjdlskjfldjflj #3g 005
 test10
