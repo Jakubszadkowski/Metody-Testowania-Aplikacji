@@ -18,8 +18,19 @@ int my_printf(char *format_string, char *param){
 		if((format_string[i] == '#') && ((format_string[i+2] == 'g')||(format_string[i+3] == 'g'))) {
 			int atrybut = atoi(format_string+(i+1));
 			printf("%s",param);
+			int dlugosc = 3;
+			if(format_string[i+3]!=' ')
+				dlugosc++;
 
-			
+			for(int j = i+dlugosc;j<strlen(format_string);j++){
+				if(atrybut>strlen(format_string)-(i+dlugosc)){
+					for(int k = 0;k<strlen(format_string)-i-dlugosc;k++){
+						putchar('0');
+					}
+				}
+			putchar(format_string[j]);
+			}
+			break;
 			
 
 	}else
