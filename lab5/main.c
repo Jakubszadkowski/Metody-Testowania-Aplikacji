@@ -1,18 +1,23 @@
 #include <stdio.h>
 #include <string.h>
+#include <stdlib.h>
 
 int my_printf(char *format_string, char *param){
 	for(int i=0;i<strlen(format_string);i++){
-		if((format_string[i] == '#') && (format_string[i+1] == 'k')){
+		printf("ata");
+		if((format_string[i] == '#') && ((format_string[i+2] == 'g'))){
 			i++;
-			printf("%s",param);
-		}else
-			putchar(format_string[i]);
+			int atrybut = atoi(format_string+i);
+			printf("atrybut = %d",atrybut);
+
+			// printf("%s",param);
+		}else{
+			// putchar(format_string[i]);
 	}
 	puts("");
 	return 0;
+	}
 }
-
 int main(int argc, char *argv[]){
 	char buf[1024],buf2[1024];
 	while(gets(buf)){
