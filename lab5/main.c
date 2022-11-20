@@ -19,12 +19,14 @@ int my_printf(char *format_string, char *param){
 			int atrybut = atoi(format_string+(i+1));
 			printf("%s",param);
 			int dlugosc = 3;
+			int flag=1;
 			if(format_string[i+3]!=' ')
 				dlugosc++;
-
-			for(int j = i+dlugosc;j<strlen(format_string);j++){
-				if(atrybut>strlen(format_string)-(i+dlugosc)){
-					for(int k = 0;k<strlen(format_string)-i-dlugosc;k++){
+			putchar(' ');
+			for(int j = i+dlugosc+1;j<strlen(format_string);j++){
+				if(atrybut>strlen(format_string)-(j)&&flag==1){
+					flag=2;
+					for(int k = 0;k< atrybut-(strlen(format_string)-j);k++){
 						putchar('0');
 					}
 				}
