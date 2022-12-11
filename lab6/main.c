@@ -42,8 +42,8 @@ int getInt(char temp){
 }
 int my_printf(char *format_string, char *param){
 	for(int i=0;i<strlen(format_string);i++){
-		if((format_string[i] == '#') && (format_string[i+1] == '.')&&(format_string[i+3] == 'g')) {
-			int atrybut = atoi(format_string+(i+1));
+		if((format_string[i] == '#') && (format_string[i+1] == '.')&&((format_string[i+3] == 'g')||(format_string[i+4] == 'g'))) {
+			int atrybut = atoi(format_string+(i+2));
 			printf("%s",param);
 			int dlugosc = 3;
 			int flag=1;
@@ -54,7 +54,7 @@ int my_printf(char *format_string, char *param){
 				if(atrybut>strlen(format_string)-(j)&&flag==1){
 					flag=2;
 					for(int k = 0;k< atrybut-(strlen(format_string)-j);k++){
-						putchar('0');
+						putchar('9');
 					}
 				}
 				flag=2;
