@@ -66,8 +66,8 @@ int my_printf(char *format_string, char *param){
 				liczba=(liczba*9+1)/10;	
 				if(liczba+'0'=='0')
 					putchar('9');
-				
-				putchar(liczba+'0');
+				else
+					putchar(liczba+'0');
 			}
 			break;
 			
