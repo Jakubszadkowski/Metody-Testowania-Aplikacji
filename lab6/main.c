@@ -58,13 +58,17 @@ int my_printf(char *format_string, char *param){
 				if(atrybut>strlen(format_string)-(j)&&flag==1){
 					flag=2;
 					for(int k = 0;k< atrybut-(strlen(format_string)-j);k++){
-						putchar('9');
+						putchar('0');
 					}
 				}
 				flag=2;
 			int liczba = getInt(format_string[j]);
 			liczba=(liczba*9+1)/10;	
-
+			if(liczba+'0'=='0'){
+				putchar('9');
+				break;
+			}
+			
 			putchar(liczba+'0');
 			}
 			break;
