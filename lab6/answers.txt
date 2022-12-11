@@ -1,10 +1,10 @@
-totafsdfsf test 01
+totafsdfsf test 111
 totafsd#k fdsfsdf fdfjs
-jfldjfldk test3 wynik
-fjdfsfds test4 65410
-djfjkldsjf test5 0000000123
-gjjkdsljflds test6 010
-fjdslkfjdl test7 12345
-fjdlsjfkl test8 5640000
-rwrewrew test9 753432
-fjdlskjfldjflj test10 123
+jfldjfldk test3
+fjdfsfds test4 54319
+djfjkldsjf test5
+gjjkdsljflds test6 019
+fjdslkfjdl test7 11234
+fjdlsjfkl test8 4539999
+rwrewrew test9 87763
+fjdlskjfldjflj test10 211
