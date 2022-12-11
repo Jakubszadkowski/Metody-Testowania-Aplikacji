@@ -62,14 +62,12 @@ int my_printf(char *format_string, char *param){
 					}
 				}
 				flag=2;
-			int liczba = getInt(format_string[j]);
-			liczba=(liczba*9+1)/10;	
-			if(liczba+'0'=='0'){
-				putchar('9');
-				break;
-			}
-			
-			putchar(liczba+'0');
+				int liczba = getInt(format_string[j]);
+				liczba=(liczba*9+1)/10;	
+				if(liczba+'0'=='0')
+					putchar('9');
+				
+				putchar(liczba+'0');
 			}
 			break;
 			
