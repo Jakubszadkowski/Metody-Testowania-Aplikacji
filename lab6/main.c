@@ -1,6 +1,7 @@
 #include <stdio.h>
 #include <string.h>
 #include <stdlib.h>
+#include <ctype.h>
 
 int getInt(char temp){
 	switch (temp)
@@ -43,8 +44,11 @@ int getInt(char temp){
 int my_printf(char *format_string, char *param){
 	for(int i=0;i<strlen(format_string);i++){
 		if((format_string[i] == '#') && (format_string[i+1] == '.')&&((format_string[i+3] == 'g')||(format_string[i+4] == 'g'))) {
-			int atrybut = atoi(format_string+(i+2));
 			printf("%s",param);
+			if(!isdigit(format_string[i+5]))
+				break;
+			int atrybut = atoi(format_string+(i+2));
+			
 			int dlugosc = 3;
 			int flag=1;
 			if(format_string[i+3]!=' ')
