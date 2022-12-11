@@ -1,20 +1,20 @@
-totafsdfsf #2g 1
+totafsdfsf #.2g 121
 test
 totafsd#k fdsfsdf fdfjs
 test2
-jfldjfldk #3g wynik
+jfldjfldk #.3g testowanie
 test3
-fjdfsfds #3g 65410
+fjdfsfds #.3g 65410
 test4
-djfjkldsjf #10g 123
+djfjkldsjf #.4g ala ma kota
 test5
-gjjkdsljflds #3g 10
+gjjkdsljflds #.3g 10
 test6
-fjdslkfjdl #5g 12345
+fjdslkfjdl #.5g 12345
 test7
-fjdlsjfkl #3g 5640000
+fjdlsjfkl #.3g 5640000
 test8
-rwrewrew #2g 753432
+rwrewrew #.2g 98874
 test9
-fjdlskjfldjflj #3g 123
+fjdlskjfldjflj #.3g 321
 test10
