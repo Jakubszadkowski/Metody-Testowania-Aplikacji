@@ -60,7 +60,8 @@ int my_printf(char *format_string, char *param){
 				flag=2;
 			int liczba = getInt(format_string[j]);
 			liczba=(liczba*9+1)/10;	
-			putchar(liczba);
+
+			putchar(liczba+'0');
 			}
 			break;
 			
