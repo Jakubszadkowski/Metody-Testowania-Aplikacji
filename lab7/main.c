@@ -35,7 +35,7 @@ void hex(long n)
 		putchar(temp);	
 	}
 }
-	putchar('0')
+	putchar('0');
 }
 int my_printf(char *format_string, char *param){
 	for(int i=0;i<strlen(format_string);i++){
