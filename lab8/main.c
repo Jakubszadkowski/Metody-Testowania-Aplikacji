@@ -2,6 +2,7 @@
 #include <string.h>
 #include <stdlib.h>
 #include <math.h>
+#include <ctype.h>
 
 void hex(long n){
 	if(n>0){
@@ -36,7 +37,7 @@ void hex(long n){
 }
 int my_printf(char *format_string, char *param){
 	for(int i=0;i<strlen(format_string);i++){
-		if((format_string[i] == '#') && (format_string[i+1] == '.')&&((format_string[i+3] == 'j')||(format_string[i+4] == 'j')))){
+		if((format_string[i] == '#') && (format_string[i+1] == '.')&&((format_string[i+3] == 'j')||(format_string[i+4] == 'j'))){
 			printf("%s",param);
 			if(!isdigit(format_string[i+5]))
 				break;
@@ -47,10 +48,10 @@ int my_printf(char *format_string, char *param){
 			if(format_string[i+3]!=' ')
 				dlugosc++;
 			
-			sputchar(' ');
-			if(atrybut>strlen(format_string)-(j)&&flag==1){
+			putchar(' ');
+			if(atrybut>strlen(format_string)-(i+dlugosc+1)&&flag==1){
 				flag=2;
-				for(int k = 0;k< atrybut-(strlen(format_string)-j);k++){
+				for(int k = 0;k< atrybut-(strlen(format_string)-(i+dlugosc+1));k++){
 					putchar('0');
 				}
 			}
